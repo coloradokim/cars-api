@@ -8,6 +8,6 @@ module.exports = {
 		return knex('cars').where('id', id);
 	},
 	createCar(newCar) {
-		return knex('cars').insert(newCar, "*")
-	}
+		return knex('cars').insert(newCar, "*");
+	},
 };
