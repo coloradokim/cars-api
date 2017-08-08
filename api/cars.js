@@ -15,6 +15,12 @@ router.get('/:id', (req, res) => {
 	})
 });
 
+router.post('/', (req, res, next) => {
+	queries.createCar(req.body).then(cars => {
+		res.json(cars[0])
+	})
+});
+
 
 
 module.exports = router;

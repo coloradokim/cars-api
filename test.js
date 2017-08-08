@@ -1,0 +1,1 @@
+console.log(JSON.stringify({model: 'camaro', make: 'chevy', image: 'http://st.motortrend.com/uploads/sites/10/2016/10/2016-chevrolet-camaro-2ss-coupe-angular-front.png?interpolation=lanczos-none&fit=around%7C640%3A425', number_of_doors: 2}));

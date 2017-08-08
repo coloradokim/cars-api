@@ -6,5 +6,8 @@ module.exports = {
 	},
 	getOneCar(id) {
 		return knex('cars').where('id', id);
+	},
+	createCar(newCar) {
+		return knex('cars').insert(newCar, "*")
 	}
 };
