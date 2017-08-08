@@ -11,7 +11,22 @@
     "debug": "~2.6.0",
     "express": "~4.14.1",
     "jade": "~1.11.0",
+    "knex": "^0.13.0",
     "morgan": "~1.7.0",
+    "pg": "^7.1.0",
     "serve-favicon": "~2.3.2"
-  }
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coloradokim/cars-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coloradokim/cars-api/issues"
+  },
+  "homepage": "https://github.com/coloradokim/cars-api#readme",
+  "description": ""
 }
