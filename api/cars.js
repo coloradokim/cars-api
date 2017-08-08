@@ -8,6 +8,13 @@ router.get('/', (req, res) => {
 	})
 });
 
+router.get('/:id', (req, res) => {
+	var id = req.params.id
+	queries.getOneCar(id).then(car => {
+		res.json(car)
+	})
+});
+
 
 
 module.exports = router;
