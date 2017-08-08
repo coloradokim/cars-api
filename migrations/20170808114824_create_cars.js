@@ -1,14 +1,14 @@
 
 exports.up = function(knex, Promise) {
-  return knex.schema.createTable("cars", (table) =>{
+  return knex.schema.createTable('cars', (table) =>{
     table.increments();
-    table.text("model");
-    table.text("make");
-    table.text("image");
-    table.integer("number_of_doors");
+    table.text('model');
+    table.text('make');
+    table.text('image');
+    table.integer('number_of_doors');
   })
 };
 
 exports.down = function(knex, Promise) {
-  return knex.schema.dropTable("cars");
+  return knex.schema.dropTableIfExists('cars');
 };
