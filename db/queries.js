@@ -10,4 +10,11 @@ module.exports = {
 	createCar(newCar) {
 		return knex('cars').insert(newCar, "*");
 	},
+	deleteCar(id) {
+		return knex('cars').where('id', id).del();
+	},
+	updateCar(id, body){console.log(id, body);
+		console.log();
+		return knex('cars').where('id', parseInt(id)).update(body)
+			}
 };
